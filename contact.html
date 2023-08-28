@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informacja o miejscu, w którym znajduje się Forest. Lokalizacja parku.">
+    <meta name="keywords" content="mapa, adres, kontakt, numer telefonu, mail, e-mail, formularz kontaktowy, pinezka">
+    <title>Forest Group Company</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dist/css/style.min.css">
+</head>
+
+<body>
+    <nav class="nav">
+    <div class="nav__name-company">
+        <h2><a href="index.html" href="#home"><img class="tree-img" src="dist/img/christmas-tree.svg" alt="">Forest</a></h2>
+    </div>
+    <div class="nav__burger-btn">
+        <div class="nav__burger-btn__bars">
+            <div class="nav__burger-btn__bars-middle"></div>
+        </div>
+    </div>
+    <div class="nav__items">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#aboutus">O nas</a>
+        <a href="index.html#offer">Oferta</a>
+        <a href="contact.html">Kontakt</a>
+    </div>
+
+</nav>
+
+<div class="menu-mobile">
+    <div class="menu-mobile__main">
+        <div class="menu-mobile__main-items">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#aboutus">O nas</a>
+            <a href="index.html#offer ">Oferta</a>
+            <a href="contact.html">Kontakt</a>
+        </div>
+
+    </div>
+</div>
+
+    <section class="contact" id="contact">
+        <h2 class="section-heading">Kontakt</h2>
+        <div class="contact__map">
+        </div>
+        <div class="wrapper">
+            <div class="contact__info">
+                <form class="contact__info-form">
+                    <h3 class="contact-heading">Formularz kontaktowy</h3>
+                    <div class="contact__info-form-details">
+                        <input class="contact__info-form-details-name" type="text" placeholder="Imię">
+                        <p class="error-text"></p>
+                        <input class="contact__info-form-details-surname" type="text" placeholder="Nazwisko">
+                        <p class="error-text"></p>
+                        <input class="contact__info-form-details-mail" type="email" placeholder="Email">
+                        <p class="error-text"></p>
+                    </div>
+                    <div class="contact__info-form-message">
+                        <textarea class="contact__info-form-message-input" placeholder="Wiadomość"></textarea>
+                        <p class="error-text"></p>
+                    </div>
+                    <p class="error-info"></p>
+                    <button class="contact__info-form-btn">Wyślij wiadomość</button>
+                </form>
+
+                <div class="contact__info-box">
+                    <p class="map-pin"><img class="map-pin-img" src="dist/img/map-pin.svg" alt=""> Jasnogórska 2, 31-358
+                        Kraków</p>
+                    <p class="phone"><img class="phone-img" src="dist/img/phone.svg" alt=""> +48 000 000 000</p>
+                    <p class="mail"><img class="mail-img" src="dist/img/mail.svg" alt="">kontakt@forest-group.com</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="contact__popup">
+            <div class="contact__popup-box">
+                <p class="contact__popup-text">Wiadomość została wysłana!</p>
+                <p class="contact__popup-icon"><img class="mail-fast-img" src="dist/img/mail-fast.svg" alt=""></p>
+                <button class="contact__popup-btn"><img class="xmark-img" src="dist/img/x.svg" alt=""></button>
+            </div>
+
+        </div>
+        </div>
+
+
+
+    </section>
+
+    <footer class="footer">
+
+    <div class="footer__wrapper">
+        <p class="footer__company-name tree"><img class="tree-img" src="dist/img/christmas-tree.svg" alt="">Forest</p>
+        <div class="footer__box">
+            <div class="footer__box-col">
+                <h3 class="footer-heading"><a href="index.html#aboutus">O nas</a></h3>
+                <p><a href="index.html#home">Dokumenty</a></p>
+                <p><a href="index.html#home">Parki</a></p>
+                <p><a href="index.html#home">Opinie</a></p>
+
+            </div>
+            <div class="footer__box-col">
+                <h3 class="footer-heading"><a href="index.html#aboutus">Nasza firma</a></h3>
+                <p><a href="index.html#home">Praca</a></p>
+                <p><a href="index.html#home">Kadry</a></p>
+                <p><a href="index.html#home">Zarząd</a></p>
+            </div>
+            <div class="footer__box-col">
+                <h3 class="footer-heading"><a href="index.html#home">Dokumenty</a></h3>
+                <p><a href="index.html#home">Wnioski</a></p>
+                <p><a href="index.html#home">Rezerwacje</a></p>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <p class="footer__copy">&copy;2023 Forest Group Company Ltd.</p>
+</footer>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNblYCb7_4MmRcCueVzkVhsgqaoaz4Bw0&callback=initMap&libraries=&v=weekly"
+        async></script>
+
+    <script src="dist/js/main.min.js"></script>
+
+</body>
+
+</html>

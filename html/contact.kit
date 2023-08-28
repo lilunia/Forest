@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Informacja o miejscu, w którym znajduje się Forest. Lokalizacja parku.">
+    <meta name="keywords" content="mapa, adres, kontakt, numer telefonu, mail, e-mail, formularz kontaktowy, pinezka">
+    <title>Forest Group Company</title>
+    <!-- @include 'styles.kit' -->
+</head>
+
+<body>
+    <!-- @include 'nav.kit' -->
+
+    <section class="contact" id="contact">
+        <h2 class="section-heading">Kontakt</h2>
+        <div class="contact__map">
+        </div>
+        <div class="wrapper">
+            <div class="contact__info">
+                <form class="contact__info-form">
+                    <h3 class="contact-heading">Formularz kontaktowy</h3>
+                    <div class="contact__info-form-details">
+                        <input class="contact__info-form-details-name" type="text" placeholder="Imię">
+                        <p class="error-text"></p>
+                        <input class="contact__info-form-details-surname" type="text" placeholder="Nazwisko">
+                        <p class="error-text"></p>
+                        <input class="contact__info-form-details-mail" type="email" placeholder="Email">
+                        <p class="error-text"></p>
+                    </div>
+                    <div class="contact__info-form-message">
+                        <textarea class="contact__info-form-message-input" placeholder="Wiadomość"></textarea>
+                        <p class="error-text"></p>
+                    </div>
+                    <p class="error-info"></p>
+                    <button class="contact__info-form-btn">Wyślij wiadomość</button>
+                </form>
+
+                <div class="contact__info-box">
+                    <p class="map-pin"><img class="map-pin-img" src="./img/map-pin.svg" alt=""> Jasnogórska 2, 31-358
+                        Kraków</p>
+                    <p class="phone"><img class="phone-img" src="./img/phone.svg" alt=""> +48 000 000 000</p>
+                    <p class="mail"><img class="mail-img" src="./img/mail.svg" alt="">kontakt@forest-group.com</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="contact__popup">
+            <div class="contact__popup-box">
+                <p class="contact__popup-text">Wiadomość została wysłana!</p>
+                <p class="contact__popup-icon"><img class="mail-fast-img" src="./img/mail-fast.svg" alt=""></p>
+                <button class="contact__popup-btn"><img class="xmark-img" src="./img/x.svg" alt=""></button>
+            </div>
+
+        </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- @include 'footer.kit' -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNblYCb7_4MmRcCueVzkVhsgqaoaz4Bw0&callback=initMap&libraries=&v=weekly"
+        async></script>
+
+    <script src="./js/main.min.js"></script>
+
+</body>
+
+</html>

@@ -70,7 +70,7 @@ function cleanStuff(done) {
 function startBrowserSync(done) {
 	browserSync.init({
 		server: {
-			baseDir: './dist',
+			baseDir: './',
 		},
 	})
 	done()

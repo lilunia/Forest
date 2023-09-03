@@ -8,19 +8,18 @@ This page was written in polish language. When you first enter the page, you are
 On contact subpage I used API from <a href="https://developers.google.com/maps">Google Maps Platform</a>. There you can also find a contact form with validation. Fill in the form correctly and received a popup information.
 
 ## Tech used 🧰
+<p align="left">
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML?retiredLocale=pl"><img src="dist/img/html5_icon.svg" style="width:32px; height:32px;" alt="HTML icon"></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS?retiredLocale=pl"><img src="dist/img/css3_icon.svg" style="width:32px; height:32px;" alt="Css icon"></a>
+<a href="https://sass-lang.com/"><img src="dist/img/sass_icon.svg" style="width:32px; height:32px;"alt="Sass icon"></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="dist/img/js_icon.svg" style="width:32px; height:32px;" alt="JS icon"></a>
+<a href="https://gulpjs.com/"><img src="dist/img/gulp_icon.svg" style="width:32px; height:32px;" alt="Gulp icon"></a>
 
 - HTML
 - CSS
 - SASS & BEM
 - Javascript
 - Tools: Gulp
-
-<p align="center">
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML?retiredLocale=pl"><img src="dist/img/html5_icon.svg" style="width:32px; height:32px;" alt="HTML icon"></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS?retiredLocale=pl"><img src="dist/img/css3_icon.svg" style="width:32px; height:32px;" alt="Css icon"></a>
-<a href="https://sass-lang.com/"><img src="dist/img/sass_icon.svg" style="width:32px; height:32px;"alt="Sass icon"></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="dist/img/js_icon.svg" style="width:32px; height:32px;" alt="JS icon"></a>
-<a href="https://gulpjs.com/"><img src="dist/img/gulp_icon.svg" style="width:32px; height:32px;" alt="Gulp icon"></a>
 
 </p>
 

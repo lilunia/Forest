@@ -16,46 +16,48 @@ On contact subpage I used API from <a href="https://developers.google.com/maps">
 - Tools: Gulp
 
 <p align="center">
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML?retiredLocale=pl"><img src="dist/img/html5_icon.svg" alt="HTML icon"></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS?retiredLocale=pl"><img src="dist/img/css3_icon.svg" alt="Css icon"></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML?retiredLocale=pl"><img src="dist/img/html5_icon.svg" style="width:16px; height:16px;" alt="HTML icon"></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS?retiredLocale=pl"><img src="dist/img/css3_icon.svg" style="width:16px; height:16px;" alt="Css icon"></a>
 <a href="https://sass-lang.com/"><img src="dist/img/sass_icon.svg" alt="Sass icon"></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="dist/img/js_icon.svg" alt="JS icon"></a>
-<a href="https://gulpjs.com/"><img src="dist/img/gulp_icon.svg" alt="Gulp icon"></a>c
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="dist/img/js_icon.svg" style="width:16px; height:16px;" alt="JS icon"></a>
+<a href="https://gulpjs.com/"><img src="dist/img/gulp_icon.svg" style="width:16px; height:16px;" alt="Gulp icon"></a>
 
 </p>
 
 ## Screenshots 📺
 
--offer section
+- offer section
 
 <p align="center">
     <img src="dist/img/offer-section.PNG" alt="Screen Shot">
 </p>
--offer subpage
-<p align="center">
-    <img src="dist/img/offer-subpage.PNG" alt="Screen Shot">
-</p>
--contact subpage
-<p align="center">
-    <img src="dist/img/contact-subpage.PNG" alt="Screen Shot">
-</p>
+
+- offer subpage
+   <p align="center">
+       <img src="dist/img/offer-subpage.PNG" alt="Screen Shot">
+   </p>
+
+- contact subpage
+   <p align="center">
+       <img src="dist/img/contact-subpage.PNG" alt="Screen Shot">
+   </p>
 
 ## Code Example/Issues 📧
 
-If you have any issues, please let me know in the issues section or directly to lilkupczyk@gmail.com
+If you have any issues, please let me know in the issues section or directly to 
 
 ## Performance 🚀
 
 Checked with <a href="https://pagespeed.web.dev/?utm_source=psi&utm_medium=redirect">PageSpeed Insights</a>
 
 - on desktop
-        <p align="center">
-        <img src="dist/img/desktop-performance.PNG" alt="Screen Shot">
-        </p>
+  <p align="center">
+  <img src="dist/img/desktop-performance.PNG" alt="Screen Shot">
+  </p>
 - on mobile
-        <p align="center">
-        <img src="dist/img/mobile-performance.PNG" alt="Screen Shot">
-        </p>
+  <p align="center">
+  <img src="dist/img/phone-performance.PNG" alt="Screen Shot">
+  </p>
 
 <p align="center">It may be diffrent on your device.</p>
 
@@ -74,4 +76,4 @@ npm run start
 
 ## Live 💥
 
-<a href="https://github.com/lilunia/Forest.git">https://github.com/lilunia/Forest.git</a>
+<a href="https://lilunia.github.io/Forest/">https://lilunia.github.io/Forest/</a>

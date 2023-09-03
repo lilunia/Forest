@@ -361,7 +361,7 @@ a {
 //Offer
 .offer {
 	margin-bottom: 2em;
-	padding-bottom: 30rem;
+	padding-bottom: 45rem;
 
 	&-heading {
 		margin: 1em 0;
@@ -558,7 +558,7 @@ a {
 	left: 0;
 	margin-top: auto;
 	width: 100%;
-	height: 30rem;
+	height: 45rem;
 	z-index: 90;
 	background-color: $grey-white;
 	.wrapper {
@@ -573,11 +573,11 @@ a {
 		justify-content: center;
 		align-items: center;
 		padding: 0.5em;
-		width: 100%;
-		font-size: 3rem;
+		width: 50%;
+		font-size: 2rem;
 	}
 	&-heading {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		margin-bottom: 0.5em;
 	}
 
@@ -586,6 +586,8 @@ a {
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+		width: 50%;
+		font-size: 1.5rem;
 
 		&-col {
 			padding: 1em 2em;
@@ -593,7 +595,7 @@ a {
 		}
 
 		p {
-			font-size: 1.5rem;
+			font-size: 1.2rem;
 			margin-bottom: 0.5em;
 		}
 	}
@@ -601,7 +603,8 @@ a {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin: 2em auto;
+		// margin: 1em auto;
+		padding: 1em;
 		width: 100%;
 		font-size: 1.5em;
 	}
@@ -849,18 +852,6 @@ a {
 		}
 	}
 
-	.footer {
-		&__wrapper {
-			display: flex;
-			flex-direction: row;
-		}
-		&__company-name {
-			width: 50%;
-		}
-		&__box {
-			width: 50%;
-		}
-	}
 	.contact {
 		&__popup {
 			&-box {
@@ -889,6 +880,14 @@ a {
 			}
 		}
 	}
+	.footer {
+		&__company-name {
+			font-size: 3rem;
+		}
+		&-heading {
+			margin-bottom: 1em;
+		}
+	}
 }
 
 @media (min-width: 768px) {
@@ -897,6 +896,34 @@ a {
 			&-form {
 				width: 70rem;
 				margin: 4em auto;
+			}
+		}
+	}
+	.offer {
+		padding-bottom: 30rem;
+	}
+	.footer {
+		height: 30rem;
+		&__company-name {
+			font-size: 4rem;
+			width: 50%;
+		}
+		&-heading {
+			margin-bottom: 1em;
+		}
+		&__box {
+			flex-direction: row;
+			justify-content: start;
+			align-items: start;
+			width: 50%;
+			&-col {
+				padding: 1em 2em;
+				text-align: left;
+
+				p {
+					font-size: 1.5rem;
+					margin-bottom: 1em;
+				}
 			}
 		}
 	}
@@ -1016,10 +1043,6 @@ a {
 		}
 	}
 	.footer {
-		&__wrapper {
-			display: flex;
-			flex-direction: row;
-		}
 		&__company-name {
 			font-size: 4rem;
 			width: 50%;

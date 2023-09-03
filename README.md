@@ -4,10 +4,10 @@
 
 Forest Group Website. This project is a part of course from <a href="https://mmcschool.pl/kursy/kurs-tworzenia-stron-www-cz-4.html">MMC School</a>. The mockup of Home Page was designed by MMC School. Subpages were designed by myself. The code is my own. In this project I used an open-source JavaScript <a href="https://gulpjs.com/">Gulp</a>.
 
-This page was written in polish language. When you first enter the page, you are going to see the main page with sections: about and offers. In offers section you can find the "Więcej ofert" button and go to the offer subpage.  
+This page was written in polish language. When you first enter the page, you are going to see the main page with sections: "about" and "offers". In "offers" section you can find the "Więcej ofert" button and go to the offer subpage.  
 On contact subpage I used API from <a href="https://developers.google.com/maps">Google Maps Platform</a>. There you can also find a contact form with validation. Fill in the form correctly and received a popup information.
 
-## Tech/framework used 🧰
+## Tech used 🧰
 
 - HTML
 - CSS
@@ -16,11 +16,11 @@ On contact subpage I used API from <a href="https://developers.google.com/maps">
 - Tools: Gulp
 
 <p align="center">
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML?retiredLocale=pl"><img src="dist/img/html5_icon.svg" style="width:16px; height:16px;" alt="HTML icon"></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/CSS?retiredLocale=pl"><img src="dist/img/css3_icon.svg" style="width:16px; height:16px;" alt="Css icon"></a>
-<a href="https://sass-lang.com/"><img src="dist/img/sass_icon.svg" alt="Sass icon"></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="dist/img/js_icon.svg" style="width:16px; height:16px;" alt="JS icon"></a>
-<a href="https://gulpjs.com/"><img src="dist/img/gulp_icon.svg" style="width:16px; height:16px;" alt="Gulp icon"></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML?retiredLocale=pl"><img src="dist/img/html5_icon.svg" style="width:32px; height:32px;" alt="HTML icon"></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS?retiredLocale=pl"><img src="dist/img/css3_icon.svg" style="width:32px; height:32px;" alt="Css icon"></a>
+<a href="https://sass-lang.com/"><img src="dist/img/sass_icon.svg" style="width:32px; height:32px;"alt="Sass icon"></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="dist/img/js_icon.svg" style="width:32px; height:32px;" alt="JS icon"></a>
+<a href="https://gulpjs.com/"><img src="dist/img/gulp_icon.svg" style="width:32px; height:32px;" alt="Gulp icon"></a>
 
 </p>
 

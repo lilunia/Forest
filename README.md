@@ -58,7 +58,7 @@ Checked with <a href="https://pagespeed.web.dev/?utm_source=psi&utm_medium=redir
   <img src="dist/img/phone-performance.PNG" alt="Screen Shot">
   </p>
 
-<p align="center">It may be diffrent on your device.</p>
+<p align="center">It may be different on your device.</p>
 
 ## Installation 💾
 

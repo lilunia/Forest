@@ -121,7 +121,7 @@ window.addEventListener('click', e => (e.target === menuMobileBackground ? close
 
 //MAPA
 
-let map
+let map, marker
 const stylesArray = [
 	{
 		elementType: 'geometry',

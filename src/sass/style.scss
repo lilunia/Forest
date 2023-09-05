@@ -58,8 +58,8 @@ a {
 .mail-img {
 	padding: 0 0.5em;
 }
+
 .tree-img,
-.mail-fast-img,
 .xmark-img {
 	width: 1em;
 	height: 1em;
@@ -82,15 +82,12 @@ a {
 		justify-content: space-between;
 		align-items: center;
 		padding: 1em;
-		width: 100%;
-		height: 6rem;
-		line-height: 6em;
 		background: none;
 	}
 
 	&__name-company {
+		margin-left: 2em;
 		h2 {
-			margin-left: 1em;
 			font-size: 3rem;
 			font-weight: 400;
 		}
@@ -102,6 +99,20 @@ a {
 	}
 	&__items {
 		display: none;
+		width: 45%;
+		height: 100%;
+		font-size: 2rem;
+		a {
+			padding: 1em;
+			width: 60rem;
+			height: 100%;
+			text-align: center;
+			transition: background-color 0.3s, color 0.3s;
+		}
+		a:hover {
+			background-color: $black;
+			color: $pure-white;
+		}
 	}
 	&__burger-btn {
 		display: block;
@@ -144,7 +155,7 @@ a {
 			transform: translateY(-1.25rem) rotate(135deg);
 		}
 		.active .nav__burger-btn__bars-middle {
-			animation: middleBarScale 0.3s both;
+			animation: 0.3s both middleBarScale;
 		}
 		.active {
 			transition: transform 2s;
@@ -233,10 +244,10 @@ a {
 	}
 }
 .show {
-	animation: showMenuMobile 1s both;
+	animation: 1s both showMenuMobile;
 }
 .hide {
-	animation: hideMenuMobile 1s forwards;
+	animation: 1s forwards hideMenuMobile;
 }
 
 @keyframes showMenuMobile {
@@ -300,6 +311,7 @@ a {
 
 //About us
 .aboutus {
+	margin: 5em 0;
 	&__info {
 		display: flex;
 		justify-content: center;
@@ -360,7 +372,7 @@ a {
 }
 //Offer
 .offer {
-	margin-bottom: 2em;
+	margin: 5em 0;
 	padding-bottom: 45rem;
 
 	&-heading {
@@ -500,8 +512,7 @@ a {
 		justify-content: center;
 		align-items: center;
 		flex-wrap: wrap;
-		// margin: 2em;
-		// min-height: calc(50vh - 6rem);
+		margin: 5em 0;
 	}
 	&__newcard {
 		display: flex;
@@ -520,7 +531,6 @@ a {
 			width: 100%;
 			height: 60%;
 			background-position: left;
-			// overflow: hidden;
 			transition: transform 0.3s;
 
 			img {
@@ -559,7 +569,6 @@ a {
 	margin-top: auto;
 	width: 100%;
 	height: 45rem;
-	z-index: 90;
 	background-color: $grey-white;
 	.wrapper {
 		display: flex;
@@ -616,7 +625,7 @@ a {
 //CONTACT
 
 .contact {
-	width: 100%;
+	padding-bottom: 45rem;
 	.fa-solid {
 		margin-right: 0.5em;
 	}
@@ -632,6 +641,7 @@ a {
 	&__info {
 		display: flex;
 		flex-direction: column;
+		margin: 5em 0;
 		&-form {
 			display: flex;
 			justify-content: center;
@@ -660,6 +670,7 @@ a {
 			}
 			&-message {
 				width: 100%;
+
 				&-input {
 					margin: 1em 0;
 					padding: 1em;
@@ -723,12 +734,12 @@ a {
 		height: 100%;
 		background-color: rgba(255, 255, 255, 0.7);
 		z-index: 10;
-		animation: showPopup 1s forwards;
+		animation: 1s forwards showPopup;
 
 		&-box {
 			position: relative;
-			top: 50%;
-			left: 50%;
+			top: 50vh;
+			left: 50vw;
 			transform: translate(-50%, -50%);
 			width: 24rem;
 			height: 24rem;
@@ -742,6 +753,7 @@ a {
 			justify-content: center;
 			align-items: end;
 			text-align: center;
+			margin-bottom: 0.5em;
 			width: 100%;
 			height: 50%;
 			font-size: 2.2rem;
@@ -751,16 +763,9 @@ a {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			padding: 0 auto;
-			width: 100%;
-			height: 50%;
-			font-size: 4rem;
+			font-size: 2rem;
 			color: $black;
-			animation: zoomIcon 2s forwards;
-
-			i {
-				margin: 0 0.5em;
-			}
+			animation: 2s forwards zoomIcon;
 		}
 		&-btn {
 			position: absolute;
@@ -896,10 +901,14 @@ a {
 			&-form {
 				width: 70rem;
 				margin: 4em auto;
+				padding: 3em;
 			}
 		}
 	}
 	.offer {
+		padding-bottom: 30rem;
+	}
+	.contact {
 		padding-bottom: 30rem;
 	}
 	.footer {
@@ -931,7 +940,9 @@ a {
 
 @media (min-width: 992px) {
 	.nav {
-		padding: 0 10em;
+		.wrapper {
+			padding: 0em;
+		}
 
 		&__name-company {
 			width: 50%;
@@ -944,22 +955,6 @@ a {
 		}
 		&__items {
 			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			width: 45%;
-			height: 100%;
-			font-size: 2rem;
-			a {
-				padding: 0 0.5em;
-				width: 60rem;
-				height: 100%;
-				text-align: center;
-				transition: background-color 0.3s, color 0.3s;
-			}
-			a:hover {
-				background-color: $black;
-				color: $pure-white;
-			}
 		}
 	}
 	.menu-mobile {
@@ -968,9 +963,6 @@ a {
 
 	.header {
 		background-image: url('../img/jungle_1920.jpg');
-		&__text {
-			font-size: rem;
-		}
 	}
 
 	.hero-img {

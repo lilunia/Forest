@@ -38,7 +38,7 @@ const closeMenu = () => {
 }
 const checkForm = () => {
 	errorInfo.textContent = ''
-	if (firstName.value !== '' && surname.value !== '' && email.value !== '' && message.value !== '') {
+	if (firstName.value !== '' && surname.value !== '' && email.value !== '' && message.value.trim() !== '') {
 		checkNames(firstName, 'Podaj prawidłowe imię!')
 		checkNames(surname, 'Podaj prawidłowe nazwisko!')
 		checkMail(email)
@@ -119,6 +119,8 @@ sendBtn.addEventListener('click', e => {
 	checkForm()
 })
 popupBtn.addEventListener('click', closePopup)
+window.addEventListener('click', e => (e.target === popup ? closePopup() : false))
+window.addEventListener('click', e => (e.target === menuMobileBackground ? closeMenu() : false))
 
 //MAPA
 

@@ -107,7 +107,6 @@ burgerIcon.addEventListener('click', () => {
 
 allLinks.forEach(link => {
 	link.addEventListener('click', () => {
-		console.log('kliknieto w link')
 		closeMenu()
 		menuMobileBackground.style.display = 'none'
 	})

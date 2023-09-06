@@ -15,7 +15,6 @@ const popupBtn = document.querySelector('.contact__popup-btn')
 
 // STRONA FOREST
 const addActiveClass = () => {
-	console.log('klik')
 	burgerBars.classList.toggle('active')
 
 	if (burgerBars.classList.contains('active')) {
@@ -102,12 +101,12 @@ const closePopup = () => {
 	message.value = ''
 }
 
-burgerIcon.addEventListener('click', function () {
+burgerIcon.addEventListener('click', () => {
 	addActiveClass()
 })
 
 allLinks.forEach(link => {
-	link.addEventListener('click', function () {
+	link.addEventListener('click', () => {
 		console.log('kliknieto w link')
 		closeMenu()
 		menuMobileBackground.style.display = 'none'

@@ -112,7 +112,9 @@ allLinks.forEach(link => {
 	})
 })
 
-sendBtn.addEventListener('click', checkForm)
+sendBtn.addEventListener('click', e => {
+	e.preventDefault()
+	checkForm()})
 popupBtn.addEventListener('click', closePopup)
 window.addEventListener('click', e => (e.target === popup ? closePopup() : false))
 window.addEventListener('click', e => (e.target === menuMobileBackground ? closeMenu() : false))

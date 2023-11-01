@@ -112,10 +112,15 @@ allLinks.forEach(link => {
 	})
 })
 
-sendBtn.addEventListener('click', e => {
-	e.preventDefault()
-	checkForm()})
-popupBtn.addEventListener('click', closePopup)
+if (sendBtn !== undefined && sendBtn !== null) {
+	sendBtn.addEventListener('click', e => {
+		e.preventDefault()
+		checkForm()
+	})
+}
+if (popupBtn !== undefined && popupBtn !== null) {
+	popupBtn.addEventListener('click', closePopup)
+}
 window.addEventListener('click', e => (e.target === popup ? closePopup() : false))
 window.addEventListener('click', e => (e.target === menuMobileBackground ? closeMenu() : false))
 
@@ -348,13 +353,7 @@ function initMap() {
 		center: { lat: 50.0887854, lng: 19.8926397 },
 		zoom: 15,
 		styles: stylesArray,
-		// zoomControl: true,
-		// mapTypeControl: true,
-		// scaleControl: true,
-		// streetViewControl: true,
-		// rotateControl: true,
-		// fullscreenControl: true,
-		// animation: google.maps.Animation.DROP
+	
 	})
 
 	marker = new google.maps.Marker({

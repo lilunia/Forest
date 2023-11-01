@@ -1,0 +1,43 @@
+
+@media (min-width: 768px) {
+	.contact {
+		&__info {
+			&-form {
+				width: 70rem;
+				margin: 4em auto;
+				padding: 3em;
+			}
+		}
+	}
+	.offer {
+		padding-bottom: 30rem;
+	}
+	.contact {
+		padding-bottom: 30rem;
+	}
+	.footer {
+		height: 30rem;
+		&__company-name {
+			font-size: 4rem;
+			width: 50%;
+		}
+		&-heading {
+			margin-bottom: 1em;
+		}
+		&__box {
+			flex-direction: row;
+			justify-content: start;
+			align-items: start;
+			width: 50%;
+			&-col {
+				padding: 1em 2em;
+				text-align: left;
+
+				p {
+					font-size: 1.5rem;
+					margin-bottom: 1em;
+				}
+			}
+		}
+	}
+}

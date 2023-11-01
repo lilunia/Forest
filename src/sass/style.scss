@@ -18,9 +18,9 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 html {
-	// font-size: 62.5%;
 	position: relative;
-	font-size: 10px;
+	font-size: 62.5%;
+	// font-size: 10px;
 	scroll-behavior: smooth;
 }
 section {
@@ -525,7 +525,6 @@ a {
 		border-radius: 1em;
 		box-shadow: 0 0 1em $grey;
 		overflow: hidden;
-		transition: transform 0.3s;
 
 		&-img {
 			width: 100%;
@@ -636,6 +635,7 @@ a {
 	}
 	&__map {
 		height: 50rem;
+		max-width: 100%;
 	}
 	&__info {
 		display: flex;
@@ -808,286 +808,6 @@ a {
 	box-shadow: 0 0 0.5em tomato;
 }
 
-//====================================
-//MEDIA
-//====================================
-@media (min-width: 320px) {
-	.hero-img {
-		&__title {
-			margin: 0.8em;
-			padding: 1em 2em;
-		}
-	}
-	.offer {
-		&__cards {
-			margin: 0 2em;
-		}
-	}
-}
-@media (min-width: 576px) {
-	.header {
-		&__text {
-			font-size: 2rem;
-		}
-	}
-	.hero-img {
-		&__title {
-			margin: 1em;
-			padding: 1em 3em;
-			font-size: 3rem;
-		}
-	}
-	.aboutus {
-		&__img {
-			max-width: 50rem;
-		}
-	}
-	.offer {
-		&__newcard {
-			max-width: 60rem;
-
-			&-img {
-				background-position: center;
-				background-size: cover;
-			}
-			&-text {
-				font-size: 1.8rem;
-			}
-		}
-	}
-
-	.contact {
-		&__popup {
-			&-box {
-				width: 45rem;
-				height: 25rem;
-			}
-			&-text {
-				font-size: 3rem;
-			}
-			&-icon {
-				font-size: 4rem;
-			}
-			&-btn {
-				top: 2rem;
-				right: 2rem;
-			}
-		}
-
-		&__info {
-			&-form {
-				margin: 4em;
-			}
-
-			&-box {
-				font-size: 2rem;
-			}
-		}
-	}
-	.footer {
-		&__company-name {
-			font-size: 3rem;
-		}
-		&-heading {
-			margin-bottom: 1em;
-		}
-	}
-}
-
-@media (min-width: 768px) {
-	.contact {
-		&__info {
-			&-form {
-				width: 70rem;
-				margin: 4em auto;
-				padding: 3em;
-			}
-		}
-	}
-	.offer {
-		padding-bottom: 30rem;
-	}
-	.contact {
-		padding-bottom: 30rem;
-	}
-	.footer {
-		height: 30rem;
-		&__company-name {
-			font-size: 4rem;
-			width: 50%;
-		}
-		&-heading {
-			margin-bottom: 1em;
-		}
-		&__box {
-			flex-direction: row;
-			justify-content: start;
-			align-items: start;
-			width: 50%;
-			&-col {
-				padding: 1em 2em;
-				text-align: left;
-
-				p {
-					font-size: 1.5rem;
-					margin-bottom: 1em;
-				}
-			}
-		}
-	}
-}
-
-@media (min-width: 992px) {
-	.nav {
-		.wrapper {
-			padding: 0em;
-		}
-
-		&__name-company {
-			width: 50%;
-			h2 {
-				margin: 0;
-			}
-		}
-		&__burger-btn {
-			display: none;
-		}
-		&__items {
-			display: flex;
-		}
-	}
-	.menu-mobile {
-		display: none;
-	}
-
-	.header {
-		background-image: url('../img/jungle_1920.jpg');
-	}
-
-	.hero-img {
-		background-image: url(../img/girl_1920.jpg);
-
-		&__title {
-			margin: 1em;
-			padding: 1em 5em;
-			font-size: 4rem;
-		}
-	}
-
-	.aboutus {
-		&__info {
-			flex-direction: row;
-			&-text {
-				padding-top: 0;
-			}
-		}
-
-		&__img {
-			background-image: url(../img/waters_1920.jpg);
-		}
-	}
-
-	.offer {
-		&-heading {
-			margin: auto;
-			&--more {
-				margin: 1.5em 0;
-				font-size: 3rem;
-			}
-		}
-
-		&__cards {
-			flex-wrap: nowrap;
-		}
-		&__card {
-			height: 37rem;
-
-			&-price--more {
-				margin: 1em 0;
-				font-size: 3rem;
-			}
-		}
-
-		&__newcard {
-			flex-direction: row;
-			width: 100%;
-			max-width: 90rem;
-			max-height: 42rem;
-
-			&-img {
-				width: 80%;
-				height: 100%;
-				max-width: 52rem;
-
-				img {
-					height: 100%;
-					width: 100%;
-				}
-			}
-			&-text {
-				margin: 0;
-				padding: 0 2em;
-				height: 100%;
-				width: 50%;
-				line-height: 2em;
-			}
-		}
-	}
-	.footer {
-		&__company-name {
-			font-size: 4rem;
-			width: 50%;
-		}
-		&-heading {
-			margin-bottom: 1em;
-		}
-		&__box {
-			flex-direction: row;
-			justify-content: start;
-			align-items: start;
-			width: 50%;
-			&-col {
-				padding: 1em 2em;
-				text-align: left;
-
-				p {
-					font-size: 1.5rem;
-					margin-bottom: 1em;
-				}
-			}
-		}
-	}
-	.contact {
-		&__info {
-			flex-direction: row;
-		}
-		&__info {
-			&-form {
-				display: flex;
-				justify-content: center;
-				margin: 4em;
-			}
-
-			&-box {
-				display: flex;
-
-				align-items: flex-start;
-				font-size: 2rem;
-				margin-left: 0;
-			}
-		}
-	}
-}
-@media (min-width: 1200px) {
-	.contact {
-		.fa-solid {
-			margin-right: 1em;
-		}
-
-		&__info {
-			&-box {
-				margin-left: 2em;
-			}
-		}
-	}
-}
+@import './small';
+@import './medium';
+@import './large';

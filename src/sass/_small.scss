@@ -1,0 +1,83 @@
+
+@media (min-width: 320px) {
+	.hero-img {
+		&__title {
+			margin: 0.8em;
+			padding: 1em 2em;
+		}
+	}
+	.offer {
+		&__cards {
+			margin: 0 2em;
+		}
+	}
+}
+@media (min-width: 576px) {
+	.header {
+		&__text {
+			font-size: 2rem;
+		}
+	}
+	.hero-img {
+		&__title {
+			margin: 1em;
+			padding: 1em 3em;
+			font-size: 3rem;
+		}
+	}
+	.aboutus {
+		&__img {
+			max-width: 50rem;
+		}
+	}
+	.offer {
+		&__newcard {
+			max-width: 60rem;
+
+			&-img {
+				background-position: center;
+				background-size: cover;
+			}
+			&-text {
+				font-size: 1.8rem;
+			}
+		}
+	}
+
+	.contact {
+		&__popup {
+			&-box {
+				width: 45rem;
+				height: 25rem;
+			}
+			&-text {
+				font-size: 3rem;
+			}
+			&-icon {
+				font-size: 4rem;
+			}
+			&-btn {
+				top: 2rem;
+				right: 2rem;
+			}
+		}
+
+		&__info {
+			&-form {
+				margin: 4em;
+			}
+
+			&-box {
+				font-size: 2rem;
+			}
+		}
+	}
+	.footer {
+		&__company-name {
+			font-size: 3rem;
+		}
+		&-heading {
+			margin-bottom: 1em;
+		}
+	}
+}

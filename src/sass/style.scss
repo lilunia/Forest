@@ -1,4 +1,5 @@
-@use 'colors' as *;
+@import './colors';
+@import './animations';
 
 *,
 *::before,
@@ -163,27 +164,6 @@ a {
 	}
 }
 
-@keyframes middleBarScale {
-	from {
-		right: 0;
-		left: 0;
-	}
-	to {
-		right: 50%;
-		left: 50%;
-	}
-}
-@keyframes middleBarScaleNonActive {
-	from {
-		right: 50%;
-		left: 50%;
-	}
-	to {
-		right: 0;
-		left: 0;
-	}
-}
-
 .menu-mobile {
 	display: none;
 	position: absolute;
@@ -248,23 +228,6 @@ a {
 }
 .hide {
 	animation: 1s forwards hideMenuMobile;
-}
-
-@keyframes showMenuMobile {
-	from {
-		top: -46rem;
-	}
-	to {
-		top: 0rem;
-	}
-}
-@keyframes hideMenuMobile {
-	from {
-		top: 0rem;
-	}
-	to {
-		top: -46rem;
-	}
 }
 
 .section-heading {
@@ -775,26 +738,6 @@ a {
 			font-size: 3rem;
 			cursor: pointer;
 		}
-	}
-}
-
-@keyframes showPopup {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-@keyframes zoomIcon {
-	0% {
-		transform: scale(1);
-	}
-	50% {
-		transform: scale(2);
-	}
-	100% {
-		transform: scale(1);
 	}
 }
 

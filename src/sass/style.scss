@@ -21,11 +21,10 @@ body {
 html {
 	position: relative;
 	font-size: 62.5%;
-	// font-size: 10px;
 	scroll-behavior: smooth;
 }
 section {
-	scroll-margin-top: 6rem;
+	scroll-margin-top: 8rem;
 }
 
 button {
@@ -76,16 +75,19 @@ a {
 	position: sticky;
 	top: 0;
 	right: 0;
+	width: 100%;
 	background-color: $pure-white;
-	z-index: 100;
+	box-shadow: 0 0 1em $grey;
+	z-index: 200;
 	.wrapper {
+		position: relative;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 1em;
-		background: none;
+		height: 6rem;
+		background-color: $pure-white;
 	}
-
 	&__name-company {
 		margin-left: 2em;
 		h2 {
@@ -99,27 +101,59 @@ a {
 		}
 	}
 	&__items {
+		position: absolute;
+		top: -46rem;
+		left: 0;
 		display: none;
-		width: 45%;
-		height: 100%;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		height: 40rem;
 		font-size: 2rem;
-		a {
-			padding: 1em;
-			width: 60rem;
-			height: 100%;
+		background-color: $grey-white;
+		color: $black;
+		list-style: none;
+		z-index: -10;
+
+		&-item {
+			position: relative;
+			padding: 1em 0;
+			width: 15rem;
+			height: 6rem;
 			text-align: center;
-			transition: background-color 0.3s, color 0.3s;
+			a {
+				padding: 1em 2.25em;
+			}
 		}
-		a:hover {
-			background-color: $black;
-			color: $pure-white;
+		&-item::before,
+		&-item::after {
+			position: absolute;
+			display: block;
+			content: '';
+			width: 0%;
+			bottom: 0;
+			border-bottom: 0.125em solid $black;
+			transition: width 0.3s;
+		}
+		&-item::before {
+			left: 50%;
+		}
+		&-item::after {
+			right: 50%;
+		}
+		&-item:hover::before,
+		&-item:hover::after {
+			width: 50%;
 		}
 	}
+
 	&__burger-btn {
 		display: block;
 		padding: 0.5em;
 		height: 4rem;
 		width: 4.5rem;
+		cursor: pointer;
 
 		&__bars {
 			position: relative;
@@ -163,68 +197,19 @@ a {
 		}
 	}
 }
-
-.menu-mobile {
+.menu-mobile-background {
 	display: none;
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	width: 100%;
 	height: 100%;
-
 	background-color: rgba(0, 0, 0, 0.8);
-	z-index: 20;
-	&__main {
-		position: absolute;
-		top: -46rem;
-		left: 0;
-		width: 100%;
-		height: 40rem;
-		background-color: $grey-white;
-		color: $black;
-		z-index: 30;
-
-		&-items {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			width: 100%;
-			height: 100%;
-			font-size: 2rem;
-
-			a {
-				position: relative;
-				padding: 1em 0;
-				width: 15rem;
-				height: 6rem;
-				text-align: center;
-			}
-			a::before,
-			a::after {
-				position: absolute;
-				display: block;
-				content: '';
-				width: 0%;
-				bottom: 0;
-				border-bottom: 0.1em solid $black;
-				transition: width 0.3s;
-			}
-			a::before {
-				left: 50%;
-			}
-			a::after {
-				right: 50%;
-			}
-			a:hover::before,
-			a:hover::after {
-				width: 50%;
-			}
-		}
-	}
+	z-index: 30;
 }
+
 .show {
-	animation: 1s both showMenuMobile;
+	animation: 1s forwards showMenuMobile;
 }
 .hide {
 	animation: 1s forwards hideMenuMobile;
@@ -284,7 +269,7 @@ a {
 		&-img {
 			display: flex;
 			justify-content: center;
-			padding: 0 1em;
+			padding: 1em;
 			width: 100%;
 		}
 
@@ -295,7 +280,7 @@ a {
 			line-height: 2em;
 			&-heading {
 				font-size: 2rem;
-				margin-bottom: 1em;
+				margin: 1em 0;
 			}
 		}
 	}
@@ -329,7 +314,7 @@ a {
 		text-align: center;
 		font-size: 2.5rem;
 		color: $pure-white;
-		border: 0.01em solid $pure-white;
+		border: 0.0625em solid $pure-white;
 		z-index: 10;
 	}
 }
@@ -364,8 +349,9 @@ a {
 			font-size: 2em;
 			font-family: inherit;
 			border: none;
-			border-bottom: 0.1em solid $main-color;
+			border-bottom: 0.125em solid $main-color;
 			background: none;
+			cursor: pointer;
 
 			a {
 				display: inline-block;
@@ -490,9 +476,6 @@ a {
 		overflow: hidden;
 
 		&-img {
-			width: 100%;
-			height: 60%;
-			background-position: left;
 			transition: transform 0.3s;
 
 			img {
@@ -605,13 +588,9 @@ a {
 		flex-direction: column;
 		margin: 5em 0;
 		&-form {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
 			margin: 4em 2em;
-			padding: 1em;
-			border: 0.01em solid $grey-white;
+			padding: 1.5em;
+			border: 0.0625em solid $grey-white;
 			box-shadow: 0 0 0.5em $grey;
 			border-radius: 2em;
 
@@ -624,9 +603,9 @@ a {
 					margin: 1em 0;
 					padding: 1em;
 					width: 100%;
-					font-size: 1.8rem;
+					font-size: 1.75rem;
 					font-family: inherit;
-					border: 0.01em solid $grey-white;
+					border: 0.0625em solid $grey-white;
 					border-radius: 0.5em;
 				}
 			}
@@ -640,9 +619,9 @@ a {
 					height: 15rem;
 					max-height: 40rem;
 					resize: vertical;
-					font-size: 1.8rem;
+					font-size: 1.75rem;
 					font-family: inherit;
-					border: 0.01em solid $grey-white;
+					border: 0.0625em solid $grey-white;
 					border-radius: 0.5em;
 				}
 			}
@@ -651,7 +630,7 @@ a {
 				padding: 1em 3em;
 				width: 100%;
 				font-family: inherit;
-				font-size: 1.8rem;
+				font-size: 1.75rem;
 				border-radius: 0.5em;
 				border: none;
 				background-color: $main-color;
@@ -683,7 +662,7 @@ a {
 			align-items: center;
 			flex-direction: column;
 			margin: 2em;
-			font-size: 1.6rem;
+			font-size: 1.5rem;
 			line-height: 2em;
 		}
 	}
@@ -718,7 +697,7 @@ a {
 			margin-bottom: 0.5em;
 			width: 100%;
 			height: 50%;
-			font-size: 2.2rem;
+			font-size: 2.25rem;
 			color: $black;
 		}
 		&-icon {
@@ -745,7 +724,7 @@ a {
 .error-info,
 .error {
 	color: tomato;
-	font-size: 1.7rem;
+	font-size: 1.75rem;
 }
 .error {
 	box-shadow: 0 0 0.5em tomato;

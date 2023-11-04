@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="dist/css/style.min.css">
-    <script src="dist/js/main.min.js" async></script>
+    <script src="dist/js/main.min.js" defer></script>
 </head>
 
 <body>
@@ -22,34 +22,22 @@
     <nav class="nav">
     <div class="wrapper">
         <div class="nav__name-company">
-            <h2><a href="index.html" href="#home"><img class="tree-img" src="dist/img/christmas-tree.svg"
-                        alt="">Forest</a></h2>
+            <h2><a href="index.html" href="#home"><img class="tree-img" src="dist/img/christmas-tree.svg" alt="">Forest</a></h2>
         </div>
         <div class="nav__burger-btn">
             <div class="nav__burger-btn__bars">
                 <div class="nav__burger-btn__bars-middle"></div>
             </div>
         </div>
-        <div class="nav__items">
-            <a href="index.html#home">Home</a>
-            <a href="index.html#aboutus">O nas</a>
-            <a href="index.html#offer">Oferta</a>
-            <a href="contact.html">Kontakt</a>
-        </div>
+        <ul class="nav__items">
+            <li class="nav__items-item"><a href="index.html#home">Home</a></li>
+            <li class="nav__items-item"><a href="index.html#aboutus">O nas</a></li>
+            <li class="nav__items-item"><a href="index.html#offer">Oferta</a></li>
+            <li class="nav__items-item"><a href="contact.html">Kontakt</a></li>          
+        </ul>
     </div>
-
 </nav>
-<div class="menu-mobile">
-    <div class="menu-mobile__main">
-        <div class="menu-mobile__main-items">
-            <a href="index.html#home">Home</a>
-            <a href="index.html#aboutus">O nas</a>
-            <a href="index.html#offer ">Oferta</a>
-            <a href="contact.html">Kontakt</a>
-        </div>
-
-    </div>
-</div>
+<div class="menu-mobile-background"></div>
 
 
     <header class="header" id="home">
@@ -67,7 +55,7 @@
                 <div class="aboutus__info">
                     <div class="aboutus__info-img">
                         <img class="aboutus__img" src="dist/img/waters_640.jpg"
-                            alt="a stone with a small tree in the middle of a forest lake">
+                            alt="małe drzewo na głazie na środku zielonego jeziora">
                     </div>
                     <div class="aboutus__info-text">
                         <h3 class="aboutus__info-text-heading">Niezapomniane przygody</h3>
@@ -94,7 +82,7 @@
                 <div class="offer__cards">
                     <div class="offer__card" onclick="void(0)">
                         <h3 class="offer-heading">Demo</h3>
-                        <p class="offer__card-price">$0</p>
+                        <p class="offer__card-price">0zł</p>
                         <div class="offer__card-info-list">
                             <p class="check"><img class="check-img" src="dist/img/check.svg" alt="">opcja w pakiecie</p>
                             <p class="check"><img class="check-img" src="dist/img/check.svg" alt="">opcja w pakiecie</p>
@@ -109,7 +97,7 @@
                     </div>
                     <div class="offer__card" onclick="void(0)">
                         <h3 class="offer-heading">Standard</h3>
-                        <p class="offer__card-price">$99</p>
+                        <p class="offer__card-price">199zł</p>
                         <div class="offer__card-info-list">
                             <p class="check"><img class="check-img" src="dist/img/check.svg" alt="">opcja w pakiecie</p>
                             <p class="check"><img class="check-img" src="dist/img/check.svg" alt="">opcja w pakiecie</p>
@@ -124,7 +112,7 @@
                     </div>
                     <div class="offer__card" onclick="void(0)">
                         <h3 class="offer-heading">Premium</h3>
-                        <p class="offer__card-price">$299</p>
+                        <p class="offer__card-price">399zł</p>
                         <div class="offer__card-info-list--premium">
                             <p class="check"><img class="check-img" src="dist/img/check.svg" alt="">opcja w pakiecie</p>
                             <p class="check"><img class="check-img" src="dist/img/check.svg" alt="">opcja w pakiecie</p>
@@ -153,7 +141,9 @@
     <footer class="footer">
 
     <div class="wrapper">
-        <p class="footer__company-name tree"><img class="tree-img" src="dist/img/christmas-tree.svg" alt="">Forest</p>
+        <p class="footer__company-name tree"> <a href="index.html" href="#home"><img class="tree-img"
+                    src="dist/img/christmas-tree.svg" alt="">Forest</a></p>
+
         <div class="footer__box">
             <div class="footer__box-col">
                 <h3 class="footer-heading"><a href="index.html#aboutus">O nas</a></h3>

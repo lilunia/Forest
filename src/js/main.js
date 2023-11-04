@@ -1,8 +1,8 @@
 const burgerIcon = document.querySelector('.nav__burger-btn')
 const burgerBars = document.querySelector('.nav__burger-btn__bars')
-const menuMobile = document.querySelector('.menu-mobile__main')
-const menuMobileBackground = document.querySelector('.menu-mobile')
-const allLinks = document.querySelectorAll('.menu-mobile__main-items a')
+const menuMobileBackground = document.querySelector('.menu-mobile-background')
+const menuMobile = document.querySelector('.nav__items')
+const allLinks = document.querySelectorAll('.nav__items-item')
 const firstName = document.querySelector('.contact__info-form-details-name')
 const surname = document.querySelector('.contact__info-form-details-surname')
 const email = document.querySelector('.contact__info-form-details-mail')
@@ -16,16 +16,15 @@ const popupBtn = document.querySelector('.contact__popup-btn')
 // STRONA FOREST
 const addActiveClass = () => {
 	burgerBars.classList.toggle('active')
+	menuMobile.style.display = 'flex'
 
 	if (burgerBars.classList.contains('active')) {
-		menuMobile.classList.add('show')
-		menuMobile.classList.remove('hide')
+		menuMobile.classList.toggle('show')
 		menuMobileBackground.style.display = 'block'
 		menuMobileBackground.style.top = `+${window.scrollY}px`
 		document.body.style.overflow = 'hidden'
 	} else {
-		menuMobile.classList.remove('show')
-		menuMobile.classList.add('hide')
+		menuMobile.classList.toggle('hide')
 		setTimeout(closeMenu, 500)
 	}
 }
@@ -34,6 +33,8 @@ const closeMenu = () => {
 	burgerBars.classList.remove('active')
 	document.body.style.overflow = 'auto'
 	menuMobileBackground.style.display = 'none'
+	menuMobile.classList.remove('hide')
+	menuMobile.classList.remove('show')
 }
 const checkForm = () => {
 	errorInfo.textContent = ''
@@ -107,11 +108,13 @@ allLinks.forEach(link => {
 		menuMobileBackground.style.display = 'none'
 	})
 })
+
 if (burgerIcon !== null) {
 	burgerIcon.addEventListener('click', () => {
 		addActiveClass()
 	})
 }
+
 if (sendBtn !== null) {
 	sendBtn.addEventListener('click', e => {
 		e.preventDefault()
@@ -125,7 +128,6 @@ window.addEventListener('click', e => (e.target === popup ? closePopup() : false
 window.addEventListener('click', e => (e.target === menuMobileBackground ? closeMenu() : false))
 
 //MAPA
-
 let map, marker
 const stylesArray = [
 	{

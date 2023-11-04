@@ -1,8 +1,8 @@
-
 @media (min-width: 992px) {
 	.nav {
 		.wrapper {
 			padding: 0em;
+			z-index: 0;
 		}
 
 		&__name-company {
@@ -15,7 +15,38 @@
 			display: none;
 		}
 		&__items {
+			display: block;
+			position: relative;
 			display: flex;
+			flex-direction: row;
+			top: 0;
+			width: 45%;
+			height: 6rem;
+			font-size: 2rem;
+			list-style: none;
+			background-color: $pure-white;
+			&-item {
+				width: 60rem;
+				height: 100%;
+				text-align: center;
+				cursor: pointer;
+				transition: background-color 0.3s, color 0.3s;
+				a {
+					padding: 1em;
+					color: $black;
+				}
+			}
+			&-item::before,
+			&-item::after {
+				display: none;
+			}
+
+			&-item:hover {
+				background-color: $black;
+				a {
+					color: $pure-white;
+				}
+			}
 		}
 	}
 	.menu-mobile {
@@ -127,19 +158,19 @@
 			&-form {
 				display: flex;
 				justify-content: center;
+				align-items: center;
+				flex-direction: column;
 				margin: 4em;
 			}
-
 			&-box {
 				display: flex;
-
 				align-items: flex-start;
-				font-size: 2rem;
 				margin-left: 0;
 			}
 		}
 	}
 }
+
 @media (min-width: 1200px) {
 	.contact {
 		.fa-solid {

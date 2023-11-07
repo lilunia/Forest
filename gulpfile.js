@@ -3,7 +3,7 @@ const sass = require('gulp-sass')(require('sass'))
 const cssnano = require('gulp-cssnano')
 const autoprefixer = require('gulp-autoprefixer')
 const rename = require('gulp-rename')
-const babel = require('gulp-babel')
+// const babel = require('gulp-babel')
 const uglify = require('gulp-uglify')
 const imagemin = require('gulp-imagemin')
 const sourcemaps = require('gulp-sourcemaps')
@@ -38,11 +38,11 @@ function sassCompiler(done) {
 function javaScript(done) {
 	src(paths.js)
 		.pipe(sourcemaps.init())
-		.pipe(
-			babel({
-				presets: ['@babel/env'],
-			})
-		)
+		// .pipe(
+		// 	babel({
+		// 		presets: ['@babel/env'],
+		// 	})
+		// )
 		.pipe(uglify())
 		.pipe(rename({ suffix: '.min' }))
 		.pipe(sourcemaps.write())
@@ -55,14 +55,11 @@ function convertImages(done) {
 	done()
 }
 function handleKits(done) {
-	src(paths.html)
-	.pipe(kit())
-	.pipe(dest('./'))
+	src(paths.html).pipe(kit()).pipe(dest('./'))
 	done()
 }
 function cleanStuff(done) {
-	src(paths.dist, { read: false })
-	.pipe(clean())
+	src(paths.dist, { read: false }).pipe(clean())
 	done()
 
 	// src('./dist/img', { read: false })

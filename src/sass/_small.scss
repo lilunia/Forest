@@ -1,17 +1,3 @@
-
-@media (min-width: 320px) {
-	.hero-img {
-		&__title {
-			margin: 0.75em;
-			padding: 1em 2em;
-		}
-	}
-	.offer {
-		&__cards {
-			margin: 0 2em;
-		}
-	}
-}
 @media (min-width: 576px) {
 	.header {
 		&__text {

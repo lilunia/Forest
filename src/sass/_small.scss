@@ -20,10 +20,6 @@
 		&__newcard {
 			max-width: 60rem;
 
-			&-img {
-				background-position: center;
-				background-size: cover;
-			}
 			&-text {
 				font-size: 1.75rem;
 			}
@@ -31,10 +27,18 @@
 	}
 
 	.contact {
+		&__info {
+			&-form {
+				margin: 4em;
+			}
+
+			&-box {
+				font-size: 2rem;
+			}
+		}
 		&__popup {
 			&-box {
 				width: 45rem;
-				height: 25rem;
 			}
 			&-text {
 				font-size: 3rem;
@@ -45,16 +49,6 @@
 			&-btn {
 				top: 2rem;
 				right: 2rem;
-			}
-		}
-
-		&__info {
-			&-form {
-				margin: 4em;
-			}
-
-			&-box {
-				font-size: 2rem;
 			}
 		}
 	}

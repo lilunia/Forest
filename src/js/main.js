@@ -130,6 +130,7 @@ window.addEventListener('click', e => (e.target === menuMobileBackground ? close
 //MAPA
 
 import initMap from './map.min.js'
-if (typeof google !== 'undefined' && typeof google === 'object') {
+if (typeof google !== 'undefined' || typeof google === 'object') {
+	window.initMap = initMap
 	initMap()
 }

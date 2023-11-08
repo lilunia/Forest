@@ -1,16 +1,16 @@
 @media (min-width: 768px) {
+	.offer {
+		padding-bottom: 30rem;
+	}
 	.contact {
 		padding-bottom: 30rem;
 		&__info {
 			&-form {
-				width: 70rem;
 				margin: 4em auto;
 				padding: 3em;
+				width: 70rem;
 			}
 		}
-	}
-	.offer {
-		padding-bottom: 30rem;
 	}
 	.footer {
 		height: 30rem;
@@ -25,9 +25,7 @@
 			flex-direction: row;
 			justify-content: start;
 			align-items: start;
-			width: 50%;
 			&-col {
-				padding: 1em 2em;
 				text-align: left;
 
 				p {

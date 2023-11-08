@@ -1,4 +1,7 @@
 @media (min-width: 992px) {
+	.map-pin {
+		flex-direction: column;
+	}
 	.nav {
 		.wrapper {
 			padding: 0;
@@ -163,23 +166,8 @@
 				margin: 4em;
 			}
 			&-box {
-				display: flex;
-				align-items: flex-start;
+				width: 40%;
 				margin-left: 0;
-			}
-		}
-	}
-}
-
-@media (min-width: 1200px) {
-	.contact {
-		.fa-solid {
-			margin-right: 1em;
-		}
-
-		&__info {
-			&-box {
-				margin-left: 2em;
 			}
 		}
 	}

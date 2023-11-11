@@ -435,7 +435,7 @@ a {
 
 		&-btn {
 			margin: 1em;
-			padding: 0.25em 0.75em;
+			width: 20rem;
 			font-size: 2em;
 			font-family: inherit;
 			border: none;
@@ -444,8 +444,9 @@ a {
 			cursor: pointer;
 
 			a {
-				display: inline-block;
 				display: flex;
+				justify-content: space-between;
+				padding: 0.5em 1em;
 			}
 		}
 		&-btn::before {
@@ -459,7 +460,14 @@ a {
 		&-btn:hover::before {
 			height: 100%;
 		}
+		&-btn:hover .right-img {
+			padding: 0em;
+		}
+		.right-img {
+			transition: padding 0.3s;
+		}
 	}
+
 	&__newcards {
 		display: flex;
 		justify-content: center;
@@ -510,7 +518,7 @@ a {
 
 .contact {
 	padding-bottom: 45rem;
-	
+
 	&-heading {
 		text-align: center;
 		font-size: 2rem;

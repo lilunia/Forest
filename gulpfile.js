@@ -71,8 +71,6 @@ function handleKits(done) {
 function cleanStuff(done) {
 	src(paths.dist, { read: false }).pipe(clean())
 	done()
-
-	// src('./dist/img', { read: false })
 }
 function startBrowserSync(done) {
 	browserSync.init({

@@ -1,3 +1,4 @@
+let map, marker, icon
 const initMap = () => {
 	const styledMapType = new google.maps.StyledMapType(
 		[
@@ -131,5 +132,4 @@ const initMap = () => {
 	map.setMapTypeId('styled_map')
 }
 
-export let map, marker, icon
 export default initMap

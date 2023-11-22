@@ -43,7 +43,7 @@ On contact subpage I used API from <a href="https://developers.google.com/maps">
 
 ## Code Example/Issues 📧
 
-If you have any issues, please let me know in the issues section or directly to 
+If you have any issues, please let me know in the issues section or directly to lilkupczyk@gmail.com
 
 ## Performance 🚀
 
